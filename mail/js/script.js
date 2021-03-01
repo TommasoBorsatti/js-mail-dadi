@@ -18,10 +18,10 @@ console.log(lista);
 //2b. Controlla indice per indice tutta la lista di chi può accedere con un ciclo for; per ragioni di debug stampa anche i nomi in Console.
 // -------------------------------------------------------------------------------------------------------------------------------------------
 // Il contatore continua fino a che una delle 2 condizioni stabilite è falsa:
-// la prima:il contatore deve eseguire un numero di iterazioni INFERIORE alla lunghezza dell'array.
-// la seconda: appena il contenuto di uno degli indici dell'array è diverso rispetto rispetto al conenuto assegnato alla variabile email tramite prompt.
-//il ciclo confronta l email inserita con tutti gli indici dell'array fintanto che o si esaurscono, o ne viene trovato uno uguale a quelli stabiliti.
-// Siccome si usa l'operatore logico && entrambe le condizioni devono essere vere per far continuare il ciclo: così il ciclo si interrompe non appena una delle due è falsa.
+// la prima:il contatore ha eseguito un numero di iterazioni INFERIORE alla lunghezza dell'array.
+// la seconda: il contenuto dell'indice array preso in esame è DIVERSO rispetto al conenuto assegnato alla variabile email tramite prompt.
+//il ciclo confronta l email inserita con tutti gli indici dell'array uno dopo l'altro fintanto che o si esaurscono, o ne viene trovato uno uguale a quelli stabiliti.
+// Siccome si usa l'operatore logico && entrambe le condizioni devono essere vere per far continuare il ciclo: così il ciclo si interrompe non appena UNA delle DUE è falsa.
 // -------------------------------------------------------------------------------------------------------------------------------------------
 
 for (var i = 0 ; ( i < lista.length ) && ( lista[i] != email ) ; i++){
