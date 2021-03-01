@@ -24,9 +24,9 @@ console.log(lista);
 // Siccome si usa l'operatore logico && entrambe le condizioni devono essere vere per far continuare il ciclo: così il ciclo si interrompe non appena UNA delle DUE è falsa.
 // -------------------------------------------------------------------------------------------------------------------------------------------
 
-for (var i = 0 ; ( i < lista.length ) && ( lista[i] != email ) ; i++){
+for ( var i = 0 ; ( i < lista.length ) && ( lista[i] != email ) ; i++){
+  console.log(lista[i]);
 }
-
 // 3. Stampa un messaggio appropriato sull'esito del controllo:
 // -------------------------------------------------------------------------------------------------------------------------------------------
 //3a. Se l'email inserita è uguale a un elemento dell'array, viene stampato un messaggio di approvazione.
