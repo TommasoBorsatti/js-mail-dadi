@@ -34,7 +34,7 @@ for (var i = 0 ; ( i < lista.length ) && ( lista[i] != email ) ; i++){
 // -------------------------------------------------------------------------------------------------------------------------------------------
 
 if ( lista[i] == email ) {
-  alert("Email verificata! Complimentoni, puoi entrare nel nostro esclusivo club!")
+  document.getElementById('message').innerHTML = "<em>La tua Email è stata verificata! Complimentoni, puoi entrare nel nostro esclusivo club!</em>"
 }
 
 //3b. In caso contrario, è stampato un messaggio di disapprovazione.
@@ -43,5 +43,5 @@ if ( lista[i] == email ) {
 // -------------------------------------------------------------------------------------------------------------------------------------------
 
 else {
-  alert("Ahi, ahi, ahi! Sarà per la prossima volta, perdente...")
+  document.getElementById('message').innerHTML = "<em>Ahi, ahi, ahi! Sembra che tu non sia affatto uno Sviluppatore Provetto:<br>sarà per la prossima volta, perdente...</em>"
 }
