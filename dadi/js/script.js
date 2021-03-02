@@ -6,7 +6,7 @@
 //0. Comunico al giocatore che i dadi stanno per essere tirati:
 // Eseguo un semplice alert per creare la suspance.
 
-alert("Sei pronto a tentare la fortuna?! Via al lancio dei dadi!!!")
+alert("Sei pronto a tentare la fortuna?! Via al lancio dei dadi!!!");
 
 //1. Generare un numero random per il giocatore:
 // --------------------------------------------------------------------------------------------------------------------------------------------
@@ -16,8 +16,8 @@ alert("Sei pronto a tentare la fortuna?! Via al lancio dei dadi!!!")
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
 var punteggioGiocatore = (Math.floor(Math.random() * 6) + 1);
-console.log("il punteggio del giocatore è: " + punteggioGiocatore)
-document.getElementById('giocatore').innerHTML = punteggioGiocatore
+console.log("il punteggio del giocatore è: " + punteggioGiocatore);
+document.getElementById('giocatore').innerHTML = punteggioGiocatore;
 
 //2. Generare un numero random per il computer:
 // --------------------------------------------------------------------------------------------------------------------------------------------
@@ -27,24 +27,24 @@ document.getElementById('giocatore').innerHTML = punteggioGiocatore
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
 var punteggioComputer = (Math.floor(Math.random() * 6) + 1);
-console.log("il punteggio del computer è: " + punteggioComputer)
-document.getElementById('pc').innerHTML = punteggioComputer
+console.log("il punteggio del computer è: " + punteggioComputer);
+document.getElementById('pc').innerHTML = punteggioComputer;
 
 //3. Confrontare i risultati per determinare relative casistiche di vittoria, sconfitta o pari punteggio:
 // Imposto una condizione a 3 esiti per ognuno dei quali vado a comunicare in HTML e in Console il risultato con un messaggio appropriato.
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
 if (punteggioGiocatore > punteggioComputer){
-  console.log("Congratulazioni, hai vinto!")
-  document.getElementById('risultato').innerHTML = "Congratulazioni, hai VINTO :) !!!"
+  console.log("Congratulazioni, hai vinto!");
+  document.getElementById('risultato').innerHTML = "Congratulazioni, hai VINTO :) !!!";
 }
 
 else if (punteggioGiocatore == punteggioComputer){
-  console.log("Ah! Hai pareggiato il tiro del computer! Gioca ancora, per spareggiare!")
-  document.getElementById('risultato').innerHTML = "Ah! Hai pareggiato il tiro del computer! Gioca ancora per spareggiare!"
+  console.log("Ah! Hai pareggiato il tiro del computer! Gioca ancora, per spareggiare!");
+  document.getElementById('risultato').innerHTML = "Ah! Hai pareggiato il tiro del computer! Gioca ancora per spareggiare!";
 }
 
 else {
-  console.log("Che sfortuna! Hai perso :(")
-  document.getElementById('risultato').innerHTML = "Che sfortuna! Hai perso :("
+  console.log("Che sfortuna! Hai perso :(");
+  document.getElementById('risultato').innerHTML = "Che sfortuna! Hai perso :(";
 }
