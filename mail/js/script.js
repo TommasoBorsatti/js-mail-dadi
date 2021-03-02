@@ -27,6 +27,33 @@ console.log(lista);
 for ( var i = 0 ; ( i < lista.length ) && ( lista[i] != email ) ; i++){
   console.log(lista[i]);
 }
+
+/* NEL COMMENTO - INSERISCO LA SOLUZIONE CORRETTA DELL'ESERCIZIO. La mia funziona ma a livello concettuale un ciclo for essendo definito DEVE attraversare tutto un array arrivando al termine dello stesso.
+Non devono esserci condizioni di interruzione : né forzate con un break né settate con condizioni diverse.
+La soluzione giusta è: attraversare tutto il ciclo, e all'interno dello stesso mettere una condizione IF per segnalare attraverso una variabile di controllo sé esistono indici uguali alla email inserita nel prompt.
+
+for (var i = 0 ; i < lista.length ; i++) {
+
+   if email == lista[i] {
+
+   var controllo = true;
+  }
+}
+
+if (controllo == true) {
+
+  alert("congratulazioni sei dentro");
+
+}
+
+else {
+
+  alert("mi dispiace sei fuori!")
+
+}
+
+*/
+
 // 3. Stampa un messaggio appropriato sull'esito del controllo:
 // -------------------------------------------------------------------------------------------------------------------------------------------
 //3a. Se l'email inserita è uguale a un elemento dell'array, viene stampato un messaggio di approvazione.
